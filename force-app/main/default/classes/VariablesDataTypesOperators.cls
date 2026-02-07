@@ -31,7 +31,7 @@ public with sharing class VariablesDataTypesOperators {
      * @param b The second number.
      * @return The sum of the two numbers, or null if either number is null.
      */
-    public static Integer addition(Integer a , Integer b) {  
+    public static Integer addition(Integer a , Integer b) {
         Integer result = a + b;
         if (a == null || b == null) {
             return null;
@@ -61,7 +61,7 @@ public with sharing class VariablesDataTypesOperators {
      * @return The product of the two numbers.
      */
     public static Integer multiplication(Integer a, Integer b) {
-        Integer result = a * b; 
+        Integer result = a * b;
         return result; // Replace null with the variable you used to store the result
     }
 
@@ -246,17 +246,13 @@ public with sharing class VariablesDataTypesOperators {
      * In this case, parentheses are added to the expression (a * b - c) / d + e to ensure that 
      * multiplication and subtraction are performed before division, which in turn is performed 
      * before addition.
-     * Example: adjustOrderOfOperations3(1, 2, 3, 4, 5) should return 4.75
-     * @param a The first number.
-     * @param b The second number.
-     * @param c The third number.
-     * @param d The fourth number.
-     * @param e The fifth number.
+     * Example: complexOrderOfOperations(new Integer[]{1, 2, 3, 4, 5}) should return 4.75
+     * @param numbers A list containing five numbers: a, b, c, d, and e.
      * @return The result of the adjusted arithmetic expression.
      */
-    public static Double complexOrderOfOperations(Integer a, Integer b, Integer c, Integer d, Integer e) { 
+    public static Double complexOrderOfOperations(List<Integer> numbers) { 
         // Add parentheses around the multiplication and subtraction operations so that they are performed before division and addition
-        Double result = (a * b - c) / (Double) d + e;
+        Double result = (numbers[0] * numbers[1] - numbers[2]) / (Double) numbers[3] + numbers[4];
         return result; // Replace null with the variable you used to store the result
     }
 
@@ -269,10 +265,10 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Double convertFahrenheitToCelsius(Double fahrenheit) {
 
-        final Double SUBTRACT_FACTOR = 32.0;
-        final Double MULTIPLY_FACTOR = 5.0;
-        final Double DIVIDE_FACTOR = 9.0;
-        Double celsius = (fahrenheit - SUBTRACT_FACTOR) * MULTIPLY_FACTOR / DIVIDE_FACTOR;
+        final Double subtractFactor = 32.0;
+        final Double multiplyFactor = 5.0;
+        final Double divideFactor = 9.0;
+        Double celsius = (fahrenheit - subtractFactor) * multiplyFactor / divideFactor;
         return celsius; // Replace null with the variable you used to store the result
     }
 
