@@ -32,10 +32,10 @@ public with sharing class VariablesDataTypesOperators {
      * @return The sum of the two numbers, or null if either number is null.
      */
     public static Integer addition(Integer a , Integer b) {
-        Integer result = a + b;
         if (a == null || b == null) {
             return null;
         }
+        Integer result = a + b;
         return result;
     }
 

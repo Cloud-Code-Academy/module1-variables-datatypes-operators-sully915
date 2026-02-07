@@ -150,7 +150,7 @@ public class VariablesDataTypesOperatorsTest {
 
     @IsTest
     static void testComplexOrderOfOperations() {
-        Assert.areEqual(8.0, VariablesDataTypesOperators.complexOrderOfOperations(4, 2, 2, 2, 5), 'Incorrect result for complexOrderOfOperations with 4, 2, 2, 2, 5 as arguments');
+        Assert.areEqual(8.0, VariablesDataTypesOperators.complexOrderOfOperations(2, 3, 2, 4, 2), 'Incorrect result for complexOrderOfOperations with 2, 3, 2, 4, 2 as arguments');
         Assert.areEqual(5.0, VariablesDataTypesOperators.complexOrderOfOperations(3, 3, 3, 3, 3), 'Incorrect result for complexOrderOfOperations with 3, 3, 3, 3, 3 as arguments');
     }
 
