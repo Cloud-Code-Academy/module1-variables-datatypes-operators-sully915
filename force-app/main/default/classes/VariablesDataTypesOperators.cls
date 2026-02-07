@@ -250,9 +250,9 @@ public with sharing class VariablesDataTypesOperators {
      * @param numbers A list containing five numbers: a, b, c, d, and e.
      * @return The result of the adjusted arithmetic expression.
      */
-    public static Double complexOrderOfOperations(List<Integer> numbers) { 
+    public static Double complexOrderOfOperations(Integer a, Integer b, Integer c, Integer d, Integer e) { 
         // Add parentheses around the multiplication and subtraction operations so that they are performed before division and addition
-        Double result = (numbers[0] * numbers[1] - numbers[2]) / (Double) numbers[3] + numbers[4];
+        Double result = (a * b - c) / (Double) d + e;
         return result; // Replace null with the variable you used to store the result
     }
 
